@@ -129,7 +129,8 @@ Public Class Form1
                     client.DownloadFileAsync(New Uri(videourl), targetvideofile)
 
                     Dim titlelbl As New Label
-                    titlelbl.Text = "..." & title.Substring(title.Length - 45)
+                    titlelbl.AutoEllipsis = True
+                    titlelbl.Text = title
                     titlelbl.Width = 275
                     Dim typelbl As New Label
                     typelbl.Text = "M4V"
